@@ -1,0 +1,15 @@
+.join h1,h2
+{
+    color: #c42d32;
+}
+a 
+{
+    color: #af2424;
+border: 1px solid #af2424;
+}
+footer
+{
+    background-color: #000;
+    padding: 15px;
+    color: #af2424;
+}

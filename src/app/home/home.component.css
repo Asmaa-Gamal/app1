@@ -1,0 +1,19 @@
+.home
+{
+    background-image: url(../../assets/cover-2.jpg);
+    background-size: cover;
+    height:90vh;
+}
+a
+{
+    border: 1px solid #fff;
+    color: #fff;
+}
+.caption >h1,h3{
+    color: #fff;
+}
+p{
+    letter-spacing: 1px;
+    font-weight: 400px;
+    
+}

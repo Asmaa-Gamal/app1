@@ -1,0 +1,35 @@
+
+
+
+
+
+<div class="container mt-5">
+<form [formGroup]='userData'(ngSubmit)='saveFrom()'>
+<div class="form-group">
+<label for="text">userName</label>
+<input type="text" class="form-control" formControlName='userName'>
+<div *ngIf="userData.controls.userName.touched && userData.controls.userName.errors !=null "class="alert alert-danger mt-2 ">name must >3</div>
+</div>
+
+<div class="form-group">
+    <label>userAge</label>
+    <input type="number" class="form-control" formControlName='userAge'>
+    <div *ngIf="userData.controls.userAge.touched && userData.controls.userAge.errors !=null "class="alert alert-danger mt-2 ">age must between 10 and 50</div>
+    </div>
+
+    <div class="form-group">
+        <label>userMail</label>
+        <input type="email" class="form-control" formControlName='userMail'>
+        <div *ngIf="userData.controls.userMail.touched && userData.controls.userMail.errors !=null "class="alert alert-danger mt-2 ">enter a valid</div>
+        </div>
+
+        <div class="form-group">
+            <label>userPassword</label>
+            <input type="password" class="form-control" formControlName='userPassword'>
+            <div *ngIf="userData.controls.userPassword.touched && userData.controls.userPassword.errors !=null "class="alert alert-danger mt-2">password must be good</div>
+            </div>
+
+            <button [disabled]='userData.invalid'class="btn btn-info"type="submit">Register</button>
+
+        </form>
+</div>
